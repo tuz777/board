@@ -1,0 +1,17 @@
+CREATE DATABASE test;
+USE test;
+CREATE TABLE THREADS
+(
+speed double,
+op_post int PRIMARY KEY,
+title text,
+posts_num int,
+issue_time int
+);
+CREATE TABLE POSTS
+(
+num int primary key,
+issue_time int,
+post text,
+thread int
+);
